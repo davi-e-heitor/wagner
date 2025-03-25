@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\wagner\bin\Debug\net8.0\wagner.exe
+C:\Users\david\source\repos\wagner\bin\Debug\net8.0\wagner.deps.json
+C:\Users\david\source\repos\wagner\bin\Debug\net8.0\wagner.runtimeconfig.json
+C:\Users\david\source\repos\wagner\bin\Debug\net8.0\wagner.dll
+C:\Users\david\source\repos\wagner\bin\Debug\net8.0\wagner.pdb
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.AssemblyInfo.cs
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.dll
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\refint\wagner.dll
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.pdb
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\wagner.genruntimeconfig.cache
+C:\Users\david\source\repos\wagner\obj\Debug\net8.0\ref\wagner.dll
