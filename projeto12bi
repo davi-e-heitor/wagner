@@ -1,0 +1,60 @@
+private void button1_Click(object sender, EventArgs e)
+{
+    int N = int.Parse(textBox1.Lines[0]);
+
+    if (1 <= N && N <= 2000)
+    {
+        for (int i = 1; i <= N; i++)
+        {
+            string linha = textBox1.Lines[i];
+            long num = long.Parse(linha); 
+
+            int totalLeds = 0;
+
+            if (num == 0)
+            {
+                totalLeds = 6; 
+            }
+            else
+            {
+                while (num > 0)
+                {
+                    int digito = (int)(num % 10); 
+                    num /= 10;
+
+                    switch (digito)
+                    {
+                        case 0:
+                        case 6:
+                        case 9:
+                            totalLeds += 6;
+                            break;
+                        case 1:
+                            totalLeds += 2;
+                            break;
+                        case 2:
+                        case 3:
+                        case 5:
+                            totalLeds += 5;
+                            break;
+                        case 4:
+                            totalLeds += 4;
+                            break;
+                        case 7:
+                            totalLeds += 3;
+                            break;
+                        case 8:
+                            totalLeds += 7;
+                            break;
+                    }
+                }
+            }
+
+            textBox2.AppendText(totalLeds + " leds" + Environment.NewLine);
+        }
+    }
+    else
+    {
+        textBox2.AppendText("Valor inválido. Digite um novo valor." + Environment.NewLine);
+    }
+}
