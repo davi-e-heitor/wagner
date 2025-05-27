@@ -1,0 +1,61 @@
+     private void button1_Click(object sender, EventArgs e)
+     {
+         textBox1.Clear();
+         int linhaAtual = 0;
+         int totalLinhas = textBox2.Lines.Length;
+
+         // Leitura do número de rodadas (N)
+         string linhaRodadas = "";
+         while (linhaRodadas == "" && linhaAtual < totalLinhas)
+         {
+             linhaRodadas = textBox2.Lines[linhaAtual];
+             linhaAtual++;
+         }
+         int N = int.Parse(linhaRodadas); // Aqui está a variável N
+
+         for (int r = 1; r <= N; r++)
+         {
+             // Leitura do número de ataques na rodada
+             string linhaAtaques = "";
+             while (linhaAtaques == "" && linhaAtual < totalLinhas)
+             {
+                 linhaAtaques = textBox2.Lines[linhaAtual];
+                 linhaAtual++;
+             }
+             int ataques = int.Parse(linhaAtaques);
+
+             for (int a = 1; a <= ataques; a++)
+             {
+                 string lStr = "", rStr = "", dStr = "";
+
+                 while (lStr == "" && linhaAtual < totalLinhas)
+                 {
+                     lStr = textBox2.Lines[linhaAtual];
+                     linhaAtual++;
+                 }
+                 while (rStr == "" && linhaAtual < totalLinhas)
+                 {
+                     rStr = textBox2.Lines[linhaAtual];
+                     linhaAtual++;
+                 }
+                 while (dStr == "" && linhaAtual < totalLinhas)
+                 {
+                     dStr = textBox2.Lines[linhaAtual];
+                     linhaAtual++;
+                 }
+
+                 int L = int.Parse(lStr);
+                 int R = int.Parse(rStr);
+                 int D = int.Parse(dStr);
+
+                 if (R > 50 && L < R && R > D)
+                 {
+                     textBox1.AppendText(r+"S" + Environment.NewLine);
+                 }
+                 else
+                 {
+                     textBox1.AppendText(r+"N" + Environment.NewLine);
+                 }
+             }
+         }
+     }
